@@ -1,0 +1,475 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'FuturaPT-Light';
+    src: url('../fonts/FuturaPT-Light.eot');
+    src: url('../fonts/FuturaPT-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Light.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Light.woff') format('woff'),
+        url('../fonts/FuturaPT-Light.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Light.svg#FuturaPT-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-ExtraBold';
+    src: url('../fonts/FuturaPT-ExtraBold.eot');
+    src: url('../fonts/FuturaPT-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-ExtraBold.woff2') format('woff2'),
+        url('../fonts/FuturaPT-ExtraBold.woff') format('woff'),
+        url('../fonts/FuturaPT-ExtraBold.ttf') format('truetype'),
+        url('../fonts/FuturaPT-ExtraBold.svg#FuturaPT-ExtraBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Bold';
+    src: url('../fonts/FuturaPT-Bold.eot');
+    src: url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Bold.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Bold.woff') format('woff'),
+        url('../fonts/FuturaPT-Bold.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Bold.svg#FuturaPT-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Book';
+    src: url('../fonts/FuturaPT-Book.eot');
+    src: url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Book.woff') format('woff'),
+        url('../fonts/FuturaPT-Book.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Book.svg#FuturaPT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Demi';
+    src: url('../fonts/FuturaPT-Demi.eot');
+    src: url('../fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Demi.woff') format('woff'),
+        url('../fonts/FuturaPT-Demi.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Demi.svg#FuturaPT-Demi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Medium';
+    src: url('../fonts/FuturaPT-Medium.eot');
+    src: url('../fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Medium.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Medium.woff') format('woff'),
+        url('../fonts/FuturaPT-Medium.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Medium.svg#FuturaPT-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaPT-Heavy';
+    src: url('../fonts/FuturaPT-Heavy.eot');
+    src: url('../fonts/FuturaPT-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Heavy.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Heavy.woff') format('woff'),
+        url('../fonts/FuturaPT-Heavy.ttf') format('truetype'),
+        url('../fonts/FuturaPT-Heavy.svg#FuturaPT-Heavy') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+	position: relative;
+}
+body {
+	min-width: 300px;
+	text-align: center;
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+	color: #000000;
+    font-family: 'FuturaPT-Book';
+}
+body.no-scroll {
+	height: 100vh !important;
+	box-sizing: border-box;
+	overflow: hidden !important;
+}
+a{
+	text-decoration: none;
+	color: #000000;
+}
+li{
+	list-style: none;
+}
+button:hover {
+    cursor: pointer;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+label.error{
+	display: none !important;
+}
+input.error,textarea.error{
+	border: 1px solid #F00 !important;
+	box-shadow: 0 0px 0px 1px #F00;
+}
+.fancybox-inner{
+	overflow: visible !important;
+}
+.b{
+	position: relative;
+}
+.container{
+	position: relative;
+	max-width: 1230px;
+	padding: 0 30px;
+	box-sizing: border-box;
+	margin: 0px auto;
+}
+.b-absolute{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	margin-left: -500px;
+}
+input::-webkit-input-placeholder {
+	color: #000000;
+}
+input:-moz-placeholder {
+	color: #000000;
+}
+.mobile-btn {
+	display: none;
+	position: absolute;
+	left: 15px;
+	top: calc(50% - 11px);
+	width: 26px;
+	height: 22px;
+	z-index: 1;
+}
+.mobile-btn .mobile-btn-el{
+	position: absolute;
+	border-radius: 4px;
+	top: 9px;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #000000;
+	opacity: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.mobile-btn::before {
+    content: '';
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-btn::after {
+	content: '';
+	position: absolute;
+    border-radius: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-btn.active::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.mobile-btn.active::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.mobile-btn.active .mobile-btn-el {
+	opacity: 0;
+}
+.close-btn {
+	display: none;
+	position: absolute;
+	width: 26px;
+	height: 22px;
+	z-index: 1;
+    top: 17px;
+    left: 15px;
+}
+.close-btn::after {
+	content: '';
+	position: absolute;
+    border-radius: 4px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.close-btn::before {
+	content: '';
+    position: absolute;
+    border-radius: 4px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    -webkit-transform-origin: left;
+    -moz-transform-origin: left;
+    -ms-transform-origin: left;
+    transform-origin: left;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.mobile-menu .close-btn {
+    display: block;
+}
+.mobile-menu {
+    display: none;
+    position: fixed;
+    padding: 40px 10px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    top: -200%;
+    left: 0;
+    z-index: 100;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.mobile-menu.active {
+    top: 0;
+}
+
+.header .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header-wrap {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+.header-logo {
+    display: inline-block;
+    position: relative;
+    max-width: 50px;
+}
+.header-logo img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.header-nav {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.header-nav li a {
+    font-family: 'FuturaPT-Light';
+    font-size: 16px;
+    color: #000000;
+}
+.header p.info {
+    display: block;
+    font-size: 18px;
+    color: #000000;
+    line-height: 1.2;
+}
+.header p.info span {
+    font-family: 'FuturaPT-Heavy';
+    color: #ff7611;
+}
+.header-phone {
+    display: inline-block;
+    font-family: 'FuturaPT-Heavy';
+    font-size: 20px;
+    color: #000000;
+}
+.header-btn {
+    display: block;
+    border-radius: 4px;
+    background-color: rgb(227, 228, 227);
+    padding: 7px 10px;
+    font-family: 'FuturaPT-Light';
+    font-size: 16px;
+    color: rgb(128, 128, 128);
+}
+
+.button-text {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #ffffff;
+    line-height: 1.2;
+    position: relative;
+    text-align: left;
+    padding-left: 35px;
+    margin-top: 13px;
+    font-family: 'FuturaPT-Light';
+}
+.button-text a {
+    color: #ffb044;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button-text a:hover {
+    color: #ff7e18;
+}
+.button-text .radio-btn {
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    left: 0;
+    top: calc(50% - 9px);
+    box-sizing: border-box;
+}
+.button-text .radio-btn.error {
+    border-color: #ff0000;
+    background-color: #ff0000;
+}
+.button-text .radio-btn:hover {
+    cursor: pointer;
+}
+.button-text .radio-btn.active::before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 2px;
+    position: absolute;
+    left: 1px;
+    top: 8px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.button-text .radio-btn.active::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    background-color: #ffffff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+
+
+
+
+@media (-webkit-min-device-pixel-ratio: 1.5) {
+}	
+@media screen and (max-width: 1280px){
+	.header-wrap {
+        flex-wrap: wrap;
+    }
+    .header-nav {
+        width: 100%;
+        order: 1;
+        margin-top: 15px;
+    }
+}
+@media screen and (max-width: 767px){
+    .container {
+        padding: 0 10px;
+    }
+    .header-wrap {
+        display: block;
+        text-align: right;
+    }
+    .header-logo, .header-nav, .header p.info, .header-btn {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    .mobile-menu .header-logo, .mobile-menu .header-btn {
+        display: inline-block;
+    }
+    .header .mobile-menu p.info {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .mobile-menu .header-nav {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .mobile-menu .header-nav li {
+        margin-bottom: 10px;
+    }
+    .mobile-btn {
+        display: block;
+    }
+}
