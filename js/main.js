@@ -42,10 +42,17 @@ $(document).ready(function(){
 
 	$('body').on('click','.form-next-btn',function(){
 		var next = $(this).attr('href');
+		var el = this;
 
-		$(this).parents('.form-wrap').find('.step').removeClass('active');
-		$(this).parents('.form-wrap').find('.name').removeClass('active');
-		$(this).parents('.form-wrap').find(next).addClass('active');
+		$(this).parents('.form-wrap').find('.step').animate({'opacity':0},300);
+		$(this).parents('.form-wrap').find('.name').animate({'opacity':0},300);
+		setTimeout(function(){
+			$(el).parents('.form-wrap').find('.step').removeClass('active');
+			$(el).parents('.form-wrap').find('.name').removeClass('active');
+			$(el).parents('.form-wrap').find(next).addClass('active');
+			$(el).parents('.form-wrap').find('.step').animate({'opacity':1},300);
+			$(el).parents('.form-wrap').find('.name').animate({'opacity':1},300);
+		},300);
 		return false;
 	});
 

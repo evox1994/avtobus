@@ -327,6 +327,13 @@ input:-moz-placeholder {
     font-family: 'FuturaPT-Light';
     font-size: 16px;
     color: #000000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-nav li a:hover {
+    color: #ff7e18;
 }
 .header p.info {
     display: block;
@@ -351,7 +358,14 @@ input:-moz-placeholder {
     padding: 7px 10px;
     font-family: 'FuturaPT-Light';
     font-size: 16px;
-    color: rgb(128, 128, 128);
+    color: #000000;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-btn:hover {
+    background-color: rgb(207, 208, 207);
 }
 
 .button-text {
