@@ -103,4 +103,8 @@ $(document).ready(function(){
 		$('body').removeClass('no-scroll');
 	});
 
+	$('body').on('click','.qwestion',function(){
+		$(this).parents('li').toggleClass('active');
+	});
+
 });
