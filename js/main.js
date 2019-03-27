@@ -114,4 +114,9 @@ $(document).ready(function(){
 		$(this).parents('li').toggleClass('active');
 	});
 
+	$('body').on('click','.switch',function(){
+		$(this).parents('.order-top').find('.order-top-1').toggleClass('active');
+		$(this).parents('.order-top').find('.order-top-3').toggleClass('active');
+	});
+
 });
