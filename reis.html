@@ -70,8 +70,11 @@
 			<h1>Закажите билет на автобус <span>онлайн, за 1 минуту</span></h1>
 			<h2>Заполните заявку и с вами сразу свяжется менеджер. Приём заявок - круглосуточный.</h2>
 			<div class="form-wrap">
-				<div class="name step-1 active"><b>1/2</b> <span>Выберите нужное колличество билетов</span></div>
-				<div class="name step-2"><b>2/2</b> <span>Укажите ваши контактные данные</span></div>
+				<div class="name step-1 active"><b>1/5</b> <span>Выберите нужное колличество билетов</span></div>
+				<div class="name step-2"><b>2/5</b> <span>Укажите информацию о вылете</span></div>
+				<div class="name step-3"><b>3/5</b> <span>Укажите информацию о прилёте</span></div>
+				<div class="name step-4"><b>4/5</b> <span>На какой адрес подать транспорт</span></div>
+				<div class="name step-5"><b>5/5</b> <span>Укажите ваши контактные данные и способ оплаты</span></div>
 				<form>
 					<div class="step step-1 active">
 						<div class="step-wrap">
@@ -121,6 +124,63 @@
 					</div>
 					<div class="step step-2">
 						<div class="step-wrap">
+							<div class="input-wrap small">
+								<input type="text" placeholder="Дата вылета">
+							</div>
+							<div class="input-wrap small">
+								<input type="text" placeholder="Время вылета">
+							</div>
+							<div class="input-wrap small">
+								<input type="text" placeholder="Номер рейса">
+							</div>
+							<div class="input-wrap small">
+								<input type="text" placeholder="Куда летите">
+							</div>
+						</div>
+						<a href=".step-3" class="form-next-btn">Далее</a>
+					</div>
+					<div class="step step-3">
+						<div class="step-wrap">
+							<div class="input-wrap small">
+								<input type="text" placeholder="Дата прилёта">
+							</div>
+							<div class="input-wrap small">
+								<input type="text" placeholder="Время прилёта">
+							</div>
+							<div class="input-wrap small">
+								<input type="text" placeholder="Номер рейса">
+							</div>
+							<div class="input-wrap small">
+								<input type="text" placeholder="Откуда летите">
+							</div>
+						</div>
+						<a href=".step-4" class="form-next-btn">Далее</a>
+					</div>
+					<div class="step step-4">
+						<div class="step-wrap">
+							<div class="input-wrap">
+								<div class="select-wrap">
+									<div class="select-area">
+										<span>Выбирите город</span>
+									</div>
+									<div class="select-drop"></div>
+									<select name="service">
+										<option class="service-1" value="m-1" selected>Томск</option>
+										<option class="service-2" value="m-2">Северск</option>
+									</select>
+								</div>
+							</div>
+							<div class="input-wrap">
+								<input type="text" placeholder="Улица">
+							</div>
+							<div class="input-wrap">
+								<input type="text" placeholder="Дом">
+							</div>
+						</div>
+						<a href=".step-5" class="form-next-btn">Далее</a>
+					</div>
+					<div class="step step-5 active">
+						<div class="step-wrap">
 							<div class="input-wrap">
 								<input type="text" placeholder="Ваше имя">
 							</div>
@@ -129,6 +189,21 @@
 							</div>
 							<div class="input-wrap">
 								<input type="tel" placeholder="Номер телефона">
+							</div>
+						</div>
+						<div class="radio-items">
+							<div class="radio-title">Способ оплаты:</div>
+							<div class="radio-wrap">
+								<input type="radio" name="opl" id="opl-1" checked>
+								<label for="opl-1"><b></b>Наличными</label>
+							</div>
+							<div class="radio-wrap">
+								<input type="radio" name="opl" id="opl-2">
+								<label for="opl-2"><b></b>Картой в офисе</label>
+							</div>
+							<div class="radio-wrap">
+								<input type="radio" name="opl" id="opl-3">
+								<label for="opl-3"><b></b>Онлайн-оплата</label>
 							</div>
 						</div>
 						<div class="summa">Итого: <span><b>0</b> руб.</span></div>

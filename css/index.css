@@ -463,7 +463,7 @@
 	color: #ffffff;
 	font-family: 'FuturaPT-Heavy';
 	line-height: 1.2;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	display: none;
 }
 .form-wrap .name.active {
@@ -609,6 +609,9 @@
 .form-wrap input:focus::-moz-placeholder          {color:transparent;}
 .form-wrap input:focus:-moz-placeholder           {color:transparent;}
 .form-wrap input:focus:-ms-input-placeholder      {color:transparent;}
+.form-wrap input:focus {
+	border-color: #ffb044;
+}
 .form-wrap .form-next-btn, .form-wrap button {
 	display: block;
 	box-sizing: border-box;
@@ -644,7 +647,6 @@
 	align-items: flex-start;
 	box-sizing: border-box;
 	width: 100%;
-	margin-bottom: 30px;
 }
 .form-wrap .order-item {
 	position: relative;
@@ -749,7 +751,7 @@
 	color: #ffffff;
 	font-size: 30px;
 	line-height: 1.2;
-	margin-bottom: 60px;
+	margin-bottom: 30px;
 }
 .form-wrap .summa span {
 	color: #ffb044;
