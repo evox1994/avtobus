@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="keywords" content=''>
+	<meta name="description" content=''>
+
+	<meta name="format-detection" content="telephone=no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1">
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
+	<link rel="stylesheet" href="css/slick.css" type="text/css">
+	<link rel="stylesheet" href="css/layout.css" type="text/css">
+	<link rel="stylesheet" href="css/arenda.css" type="text/css">
+
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
+	<script type="text/javascript" src="js/slick.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/arenda.js"></script>
+
+</head>
+<body>
+
+	<div class="b header">
+		<div class="container">
+			<div class="mobile-btn">
+				<div class="mobile-btn-el"></div>
+			</div>
+			<div class="header-wrap">
+				<a href="index.html" class="header-logo"><img src="i/logo.jpg"></a>
+				<ul class="header-nav">
+					<li><a href="#">Главная</a></li>
+					<li class="li-drop">
+						<a href="#">Расписание</a>
+						<div class="drop">
+							<div class="drop-wrap">
+								<div class="drop-items">
+									<div class="drop-item"><a href="reis.html">Томск – Толмачево</a></div>
+									<div class="drop-item"><a href="reis.html">Томск – Кемерово</a></div>
+									<div class="drop-item"><a href="reis.html">Томск – Шерегеш</a></div>
+								</div>
+								<div class="drop-items">
+									<div class="drop-item"><a href="reis.html">Томск – Горный Алтай</a></div>
+									<div class="drop-item"><a href="reis.html">Томск – Яровое</a></div>
+									<div class="drop-item"><a href="reis.html">Томск - Шира</a></div>
+								</div>
+								<div class="drop-items">
+									<div class="drop-item"><a href="reis.html">Томск – Новосибирск</a></div>
+									<div class="drop-item"><a href="reis.html">Томск – Танай</a></div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><a href="#">Аренда</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Ответы на вопросы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p class="info">Прием заявок <span>24/7</span></p>
+				<a href="tel:+73822000000" class="header-phone">+7 (3822) 00-00-00 </a>
+				<a href="#" class="header-btn">Подать заявку</a>
+			</div>
+			<div class="mobile-menu">
+				<div class="close-btn"></div>
+				<a href="index.html" class="header-logo"><img src="i/logo.jpg"></a>
+				<ul class="header-nav">
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Расписание</a></li>
+					<li><a href="#">Аренда</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Ответы на вопросы</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<p class="info">Прием заявок <span>24/7</span></p>
+				<a href="#" class="header-btn">Подать заявку</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-1">
+		<div class="container">
+			<ul class="breadcumps">
+				<li><a href="#">Главная</a></li>
+				<li>Аренда автобуса</li>
+			</ul>
+			<h1>Рассчитайте стоимость аренды <span>нового автобуса</span> в Томске</h1>
+			<h2>Более 25 автобусов для любого мероприятия вместимостью от 16 до 51 мест.</h2>
+			<div class="form-wrap">
+				<div class="name step-1 active"><b>1/3</b> <span>Сколько посадочных мест вам необходимо?</span></div>
+				<div class="name step-2"><b>2/3</b> <span>Выберите тип аренды</span></div>
+				<div class="name step-3"><b>3/3</b> <span>Укажите ваши контактные данные</span></div>
+				<form>
+					<div class="step step-1 active">
+						<div class="input-wrap">
+							<input type="text" placeholder="Введите количество">
+						</div>
+						<a href=".step-2" class="form-next-btn">Далее</a>
+					</div>
+					<div class="step step-2" data-title="Выберите нужное направление">
+						<div class="radio-items small">
+							<div class="radio-wrap">
+								<input type="radio" name="arenda" id="arenda-1" checked>
+								<label for="arenda-1"><b></b>Аренда по городу</label>
+							</div>
+							<div class="radio-wrap">
+								<input type="radio" name="arenda" id="arenda-2">
+								<label for="arenda-2"><b></b>Аренда по межгороду</label>
+							</div>
+						</div>
+						<a href=".step-3" class="form-next-btn">Далее</a>
+					</div>
+					<div class="step step-3">
+						<div class="step-wrap">
+							<div class="input-wrap">
+								<input type="text" placeholder="Ваше имя">
+							</div>
+							<div class="input-wrap">
+								<input type="text" placeholder="Фамилия">
+							</div>
+							<div class="input-wrap">
+								<input type="tel" placeholder="Номер телефона">
+							</div>
+						</div>
+						<button type="submit">Отправить заявку</button>
+						<div class="button-text"><div class="radio-btn active"></div>Я принимаю условия <a href="#" target="_blank">политики обработки персональных данных</a></div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="b b-2">
+		<div class="container">
+			<h2>Выберите нужный автобус в аренду</h2>
+			<div class="slider-title">Наши клиенты</div>
+			<div class="b-2-slider">
+				<div class="b-2-slide"><img src="i/arenda-logo-1.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-2.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-3.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-4.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-5.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-1.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-2.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-3.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-4.png"></div>
+				<div class="b-2-slide"><img src="i/arenda-logo-5.png"></div>
+			</div>
+			<ul class="catalog-list">
+				<li>
+					<div class="li-image"><a href="#"><img src="i/arenda-avto-1.png"></a></div>
+					<div class="li-text">
+						<div class="name">King Long</div>
+						<div class="time"><img src="i/time-icon.png"><span>Подача в течении одного часа или в назначеное время</span></div>
+						<div class="info">
+							<div class="info-item">Год выпска 2013</div>
+							<div class="info-item">Багажный отсек</div>
+							<div class="info-item">49 посадочных мест</div>
+							<div class="info-item">Ремни безопасности</div>
+							<div class="info-item">Есть микрофон</div>
+							<div class="info-item">Телевизор с DVD</div>
+							<div class="info-item">Кондиционер</div>
+							<div class="info-item">Высокий потолок</div>
+						</div>
+					</div>
+					<a href="#" class="li-btn">Рассчитать стоимость</a>
+					<a href="#" class="more-a">Подробнее</a>
+				</li>
+				<li>
+					<div class="li-image"><a href="#"><img src="i/arenda-avto-1.png"></a></div>
+					<div class="li-text">
+						<div class="name">Mersedes Sprinter</div>
+						<div class="time"><img src="i/time-icon.png"><span>Подача в течении одного часа или в назначеное время</span></div>
+						<div class="info">
+							<div class="info-item">Год выпска 2013</div>
+							<div class="info-item">Багажный отсек</div>
+							<div class="info-item">49 посадочных мест</div>
+							<div class="info-item">Ремни безопасности</div>
+							<div class="info-item">Есть микрофон</div>
+							<div class="info-item">Телевизор с DVD</div>
+							<div class="info-item">Кондиционер</div>
+							<div class="info-item">Высокий потолок</div>
+						</div>
+					</div>
+					<a href="#" class="li-btn">Рассчитать стоимость</a>
+					<a href="#" class="more-a">Подробнее</a>
+				</li>
+				<li>
+					<div class="li-image"><a href="#"><img src="i/arenda-avto-1.png"></a></div>
+					<div class="li-text">
+						<div class="name">Mersedes Classic</div>
+						<div class="time"><img src="i/time-icon.png"><span>Подача в течении одного часа или в назначеное время</span></div>
+						<div class="info">
+							<div class="info-item">Год выпска 2013</div>
+							<div class="info-item">Багажный отсек</div>
+							<div class="info-item">49 посадочных мест</div>
+							<div class="info-item">Ремни безопасности</div>
+							<div class="info-item">Есть микрофон</div>
+							<div class="info-item">Телевизор с DVD</div>
+							<div class="info-item">Кондиционер</div>
+							<div class="info-item">Высокий потолок</div>
+						</div>
+					</div>
+					<a href="#" class="li-btn">Рассчитать стоимость</a>
+					<a href="#" class="more-a">Подробнее</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="b b-3">
+		<div class="container">
+			<h2>Аренда автобсуов <span>в Томске</span></h2>
+			<h3>Что входит в стоимость аренды?</h3>
+			<ul class="b-3-list">
+				<li>
+					<div class="li-image"><img src="i/ar-b-3-i-1.png"></div>
+					<div class="title">ОСАГО</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/ar-b-3-i-2.png"></div>
+					<div class="title">КАСКО</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/ar-b-3-i-3.png"></div>
+					<div class="title">Водитель</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/ar-b-3-i-4.png"></div>
+					<div class="title">Страховка</div>
+				</li>
+			</ul>
+			<p class="b-3-text">Повседневная практика показывает, что рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации форм развития. Значимость этих проблем настолько очевидна, что постоянный количественный рост и сфера нашей активности позволяет выполнять важные задания по разработке новых предложений. Равным образом реализация намеченных плановых заданий способствует подготовки и реализации существенных финансовых и административных условий. Равным образом укрепление и развитие структуры требуют от нас анализа модели развития.</p>
+			<a href="#" class="b-3-btn">Рассчитать стоимость</a>
+		</div>
+	</div>
+
+	<div class="b b-4">
+		<div class="container">
+			<h2>Наши <span>преимущества</span></h2>
+			<h3>Опыт решает всё</h3>
+			<ul class="b-4-list">
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-1.png"></div>
+					<div class="title">Мы не являемся посредниками</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-2.png"></div>
+					<div class="title">Соблюдаем все законы и стандарты</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-3.png"></div>
+					<div class="title">Крупнейшая служба перевозок в Томске</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-1.png"></div>
+					<div class="title">Страховка от СОГАЗа на 2 млн. рублей</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-2.png"></div>
+					<div class="title">Идеальное соотношение цены и качества</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-3.png"></div>
+					<div class="title">Свежие автобусы 2013 - 2017 года</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-3.png"></div>
+					<div class="title">Собственный автосервис</div>
+				</li>
+				<li>
+					<div class="li-image"><img src="i/b-3-m-i-3.png"></div>
+					<div class="title">Автобусы в аренду под любые нужды</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="b b-5">
+		<div class="container">
+			<h2>Фотогалерея наших автобусов</h2>
+			<ul class="b-5-list">
+				<li><a href="i/avtobus.jpg" class="fancybox" data-fancybox="b-5-gallery"><img src="i/avtobus.jpg"></a></li>
+				<li><a href="i/avtobus.jpg" class="fancybox" data-fancybox="b-5-gallery"><img src="i/avtobus.jpg"></a></li>
+				<li><a href="i/avtobus.jpg" class="fancybox" data-fancybox="b-5-gallery"><img src="i/avtobus.jpg"></a></li>
+				<li><a href="i/avtobus.jpg" class="fancybox" data-fancybox="b-5-gallery"><img src="i/avtobus.jpg"></a></li>
+				<li><a href="i/avtobus.jpg" class="fancybox" data-fancybox="b-5-gallery"><img src="i/avtobus.jpg"></a></li>
+				<li><a href="i/avtobus.jpg" class="fancybox" data-fancybox="b-5-gallery"><img src="i/avtobus.jpg"></a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="b b-6">
+		<div class="container">
+			<h2>Что еще вас может заинтересовать</h2>
+			<ul class="b-6-list">
+				<li>
+					<a href="#"><span>Аренда микроавтобуса водителем</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Аренда микроавтобуса водителем</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Аренда микроавтобуса водителем</span></a>
+				</li>
+				<li>
+					<a href="#"><span>Аренда микроавтобуса водителем</span></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="b footer">
+		<div class="container"></div>
+	</div>
+
+	<div class="no-visible-block" style="display:none;">
+	</div>
+</body>
+</html>

@@ -290,6 +290,9 @@ input:-moz-placeholder {
     top: 0;
 }
 
+.header {
+    z-index: 100;
+}
 .header .container {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -322,6 +325,63 @@ input:-moz-placeholder {
     width: 600px;
     box-sizing: border-box;
     padding: 0 10px;
+}
+.header-nav li.li-drop {
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 15px;
+}
+.header-nav li.li-drop::before {
+    content: '';
+    display: block;
+    width: 12px;
+    height: 8px;
+    position: absolute;
+    top: calc(50% - 4px);
+    right: 0;
+    background-image: url('../i/drop-icon.png');
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.header-nav li.li-drop:hover:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.header-nav li.li-drop .drop {
+    display: none;
+    padding-top: 29px;
+    position: absolute;
+    top: 100%;
+    left: -21px;
+    min-width: calc(100% + 42px);
+}
+.header-nav li.li-drop:hover .drop {
+    display: block;
+}
+.header-nav li.li-drop .drop-wrap {
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid rgb(227, 228, 227);
+    border-radius: 0 0 4px 4px;
+    white-space: nowrap;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+.header-nav li.li-drop .drop-wrap .drop-items {
+    margin-right: 15px;
+    text-align: left;
+}
+.header-nav li.li-drop .drop-wrap .drop-items:last-child {
+    margin-right: 0;
 }
 .header-nav li a {
     font-family: 'FuturaPT-Light';

@@ -101,7 +101,7 @@ $(document).ready(function(){
 		}
 	});
 
-	$('.fancybox').fancybox();
+	$('.fancybox').fancybox({loop: true});
 	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
 
 	$('.close-btn').click(function(){
