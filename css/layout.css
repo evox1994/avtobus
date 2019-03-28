@@ -140,6 +140,11 @@ input.error,textarea.error{
 	left: 50%;
 	margin-left: -500px;
 }
+input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 input::-webkit-input-placeholder {
 	color: #000000;
 }
@@ -154,6 +159,7 @@ input:-moz-placeholder {
 	width: 26px;
 	height: 22px;
 	z-index: 1;
+    cursor: pointer;
 }
 .mobile-btn .mobile-btn-el{
 	position: absolute;
@@ -228,6 +234,7 @@ input:-moz-placeholder {
 	z-index: 1;
     top: 17px;
     left: 15px;
+    cursor: pointer;
 }
 .close-btn::after {
 	content: '';
@@ -292,6 +299,7 @@ input:-moz-placeholder {
 
 .header {
     z-index: 100;
+    border-bottom: 1px solid rgb(30, 74, 65);
 }
 .header .container {
     padding-top: 15px;
@@ -461,6 +469,7 @@ input:-moz-placeholder {
     left: 0;
     top: calc(50% - 9px);
     box-sizing: border-box;
+    cursor: pointer;
 }
 .button-text .radio-btn.error {
     border-color: #ff0000;
