@@ -119,4 +119,34 @@ $(document).ready(function(){
 		$(this).parents('.order-top').find('.order-top-3').toggleClass('active');
 	});
 
+	$('body').on('click','.radio-items .item',function(){
+		var el = $(this).attr('href');
+
+		$(this).parents('.forms').find('form').removeClass('active');
+		$(this).parents('.forms').find(el).addClass('active');
+		$(this).parents('.radio-items').find('.item').removeClass('active');
+		$(this).addClass('active');
+		return false;
+	});
+
+	$('body').on('click','.orders .less',function(){
+		var col = Number( $(this).parents('.col').find('p').text() );
+		var price = Number( $(this).parents('.order-item').find('.price span').text() );
+
+		if ( col > 0 ){
+			//sum = sum - price;
+			col--;
+			$(this).parents('.col').find('p').text(col);
+		}
+	});
+
+	$('body').on('click','.orders .more',function(){
+		var col = Number( $(this).parents('.col').find('p').text() );
+		var price = Number( $(this).parents('.order-item').find('.price span').text() );
+		
+		//sum = sum + price;
+		col++;
+		$(this).parents('.col').find('p').text(col);
+	});
+
 });
