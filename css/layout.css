@@ -926,6 +926,16 @@ input:-moz-placeholder {
     .container {
         padding: 0 10px;
     }
+    body {
+        padding-top: 57px;
+    }
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+    }
     .header-wrap {
         display: block;
         text-align: right;
