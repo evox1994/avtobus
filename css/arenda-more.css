@@ -329,6 +329,7 @@
 	box-sizing: border-box;
 	color: #000000;
 	border: 1px solid rgb(227, 228, 227);
+	background-color: rgb(227, 228, 227);
 	border-radius: 4px;
 	margin: 0 auto 30px;
 	-webkit-transition: all 0.3s;
@@ -346,6 +347,7 @@
 .b-4 form input:focus:-ms-input-placeholder      {color:transparent;}
 .b-4 form input:focus {
 	border-color: #ffb044;
+	background-color: #ffffff;
 }
 .b-4 form .buttons {
 	display: block;
@@ -608,7 +610,7 @@
 	background-image: linear-gradient( 180deg, rgb(255,125,24) 0%, rgb(255,176,68) 100%);
 }
 .b-5 .catalog-list .more-a {
-	font-size: 12px;
+	font-size: 18px;
 	color: #000000;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;

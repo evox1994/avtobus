@@ -651,6 +651,7 @@ input:-moz-placeholder {
     width: 100%;
     background-color: #ffffff;
     border: 1px solid rgb(227, 228, 227);
+    background-color: rgb(227, 228, 227);
     font-size: 18px;
     color: #000000;
     font-family: 'FuturaPT-Book';
@@ -659,6 +660,7 @@ input:-moz-placeholder {
 }
 .popup form .select-area.active {
     border-radius: 4px 4px 0 0;
+    background-color: #ffffff;
 }
 .popup form .select-area::before {
     content: '';
@@ -747,6 +749,7 @@ input:-moz-placeholder {
     box-sizing: border-box;
     color: #000000;
     border: 1px solid rgb(227, 228, 227);
+    background-color: rgb(227, 228, 227);
     border-radius: 4px;
     margin: 0 auto 30px;
     -webkit-transition: all 0.3s;
@@ -764,6 +767,7 @@ input:-moz-placeholder {
 .popup form input:focus:-ms-input-placeholder      {color:transparent;}
 .popup form input:focus {
     border-color: #ffb044;
+    background-color: #ffffff;
 }
 .popup form .form-next-btn, .popup form button {
     display: block;
