@@ -651,9 +651,9 @@ input:-moz-placeholder {
     width: 100%;
     background-color: #ffffff;
     border: 1px solid rgb(227, 228, 227);
-    font-size: 21px;
+    font-size: 18px;
     color: #000000;
-    font-family: 'FuturaPT-Light';
+    font-family: 'FuturaPT-Book';
     line-height: 1.2;
     position: relative;
 }
@@ -702,8 +702,8 @@ input:-moz-placeholder {
     padding: 22px 20px;
     box-sizing: border-box;
     z-index: 10;
-    font-family: 'FuturaPT-Light';
-    height: 155px;
+    font-family: 'FuturaPT-Book';
+    max-height: 140px;
     overflow-y: auto;
 }
 .popup form .select-drop.active {
@@ -713,7 +713,7 @@ input:-moz-placeholder {
     display: block;
     text-align: left;
     margin-bottom: 5px;
-    font-size: 21px;
+    font-size: 18px;
     color: #000000;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -742,8 +742,8 @@ input:-moz-placeholder {
     width: 100%;
     max-width: 350px;
     text-align: left;
-    font-family: 'FuturaPT-Light';
-    font-size: 21px;
+    font-family: 'FuturaPT-Book';
+    font-size: 18px;
     box-sizing: border-box;
     color: #000000;
     border: 1px solid rgb(227, 228, 227);
