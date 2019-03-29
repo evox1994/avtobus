@@ -103,6 +103,10 @@ $(document).ready(function(){
 
 	$('.fancybox').fancybox({loop: true});
 	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
+	var d = new Date();
+	$('.input-date').datepicker({
+		minDate: d
+	});
 
 	$('.close-btn').click(function(){
 		$('.mobile-btn').removeClass('active');
