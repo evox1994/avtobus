@@ -392,7 +392,7 @@ input:-moz-placeholder {
     margin-right: 0;
 }
 .header-nav li a {
-    font-family: 'FuturaPT-Light';
+    /*font-family: 'FuturaPT-Light';*/
     font-size: 16px;
     color: #000000;
     -webkit-transition: all 0.3s;
@@ -920,6 +920,9 @@ input:-moz-placeholder {
         width: 100%;
         order: 1;
         margin-top: 15px;
+    }
+    .header-nav li.li-drop .drop {
+        padding-top: 15px;
     }
 }
 @media screen and (max-width: 767px){
