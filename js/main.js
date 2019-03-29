@@ -153,4 +153,35 @@ $(document).ready(function(){
 		$(this).parents('.col').find('p').text(col);
 	});
 
+	$('input').on('input',function(){
+		$(this).removeClass('error');
+	});
+	$('textarea').on('input',function(){
+		$(this).removeClass('error');
+	});
+
+	$('form button[type="submit"]').click(function(){
+		if ( $(this).parents('form').find('.button-text .radio-btn').hasClass('active') ) {
+			$(this).parents('form').find('input').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+			$(this).parents('form').find('textarea').each(function(){
+				if(!$(this).val().length) { 
+					event.preventDefault(); 
+					$(this).addClass("error"); 
+				} else { 
+					$(this).removeClass("error"); 
+				} 
+			});
+		} else {
+			$(this).parents('form').find('.button-text .radio-btn').addClass('error');
+			event.preventDefault();
+		}
+	});
+
 });
