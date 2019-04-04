@@ -46,9 +46,11 @@ $(document).ready(function(){
 		var el = this;
 
 		$(this).parents('.step').find('input').each(function(){
-			if ( !$(this).val().length ){
-				v = false;
-				$(this).addClass('error');
+			if ( !$(this).hasClass('no-val') ){
+				if ( !$(this).val().length ){
+					v = false;
+					$(this).addClass('error');
+				}
 			}
 		});
 		$(this).parents('.step').find('textarea').each(function(){
@@ -184,7 +186,7 @@ $(document).ready(function(){
 					$(this).addClass("error"); 
 				} else { 
 					$(this).removeClass("error"); 
-				} 
+				}
 			});
 			$(this).parents('form').find('textarea').each(function(){
 				if(!$(this).val().length) { 
