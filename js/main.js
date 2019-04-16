@@ -121,10 +121,44 @@ $(document).ready(function(){
 
 	$('.fancybox').fancybox({loop: true});
 	$('input[type="tel"]').inputmask('+7 (999) 999-99-99');
-	var d = new Date();
 	$('.input-date').datepicker({
-		minDate: d
+		closeText: 'Закрыть',
+		firstDay: 1,
+		currentText: 'Сегодня',
+		monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+		monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+		dayNames: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+		dayNamesShort: ['Вск','Пнд','Втр','Срд','Чтв','Птн','Сбт'],
+		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		minDate: new Date(),
+		dateFormat: 'dd-mm-yy'
 	});
+	//инициализация календаря с выбором опред. дат
+	$('.input-date-const').datepicker({
+		closeText: 'Закрыть',
+		firstDay: 1,
+		currentText: 'Сегодня',
+		monthNames: ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь'],
+		monthNamesShort: ['Янв','Фев','Мар','Апр','Май','Июн','Июл','Авг','Сен','Окт','Ноя','Дек'],
+		dayNames: ['Воскресенье','Понедельник','Вторник','Среда','Четверг','Пятница','Суббота'],
+		dayNamesShort: ['Вск','Пнд','Втр','Срд','Чтв','Птн','Сбт'],
+		dayNamesMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+		minDate: new Date(),
+		maxDate: '+5m',
+		dateFormat: 'dd-mm-yy',
+		beforeShowDay: enableAllTheseDays
+	});
+
+	var arrDates = ['30-4-2019','15-5-2019','25-6-2019','5-7-2019','10-8-2019']; //массив дат для выбора
+
+	function enableAllTheseDays(date) {
+		var cd = date.getDate() + '-' + (date.getMonth() + 1) + '-' + date.getFullYear();
+		if ( $.inArray(cd, arrDates) != -1 ) {
+			return [true];
+		} else {
+			return [false];
+		}
+	}
 
 	$('.close-btn').click(function(){
 		$('.mobile-btn').removeClass('active');

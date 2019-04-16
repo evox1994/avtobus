@@ -12,7 +12,8 @@
 	<link rel="stylesheet" href="css/reset.css" type="text/css">
 	<link rel="stylesheet" href="css/jquery.fancybox.css" type="text/css">
 	<link rel="stylesheet" href="css/slick.css" type="text/css">
-	<link rel="stylesheet" href="css/datepicker.min.css" type="text/css">
+	<!--<link rel="stylesheet" href="css/datepicker.min.css" type="text/css">-->
+	<link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
 	<link rel="stylesheet" href="css/layout.css" type="text/css">
 	<link rel="stylesheet" href="css/reis.css" type="text/css">
 
@@ -20,7 +21,8 @@
 	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 	<script type="text/javascript" src="js/jquery.inputmask.bundle.js"></script>
 	<script type="text/javascript" src="js/slick.js"></script>
-	<script type="text/javascript" src="js/datepicker.min.js"></script>
+	<!--<script type="text/javascript" src="js/datepicker.min.js"></script>-->
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript" src="js/reis.js"></script>
 
@@ -159,11 +161,11 @@
 						<a href=".step-2" class="form-next-btn">Далее</a>
 					</div>
 					<div class="step step-2">
-						<input type="text" placeholder="Дата отъезда" class="input-date">
+						<input type="text" placeholder="Дата отъезда" class="input-date-const">
 						<a href=".step-3" class="form-next-btn">Далее</a>
 					</div>
 					<div class="step step-3">
-						<input type="text" placeholder="Дата отъезда" class="input-date">
+						<input type="text" placeholder="Дата отъезда" class="input-date-const">
 						<a href=".step-4" class="form-next-btn">Далее</a>
 					</div>
 					<div class="step step-4">
@@ -343,5 +345,11 @@
 
 	<div style="display:none;">
 	</div>
+	<script>
+		/*$('.input-date.const').datepicker({
+			minDate: new Date(),
+			
+		});*/
+	</script>
 </body>
 </html>
